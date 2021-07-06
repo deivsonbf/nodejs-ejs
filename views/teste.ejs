@@ -1,0 +1,13 @@
+<%- include ('layout/header') %>
+
+<body>
+  <% perguntas.forEach(element => { %>
+
+  <p><%= element.titulo %></p>
+  <p><%= element.descricao %></p>
+  <p><%=  element.createdAt %></p>
+
+  <% }) %>
+</body>
+
+<%- include ('layout/rodape') %>

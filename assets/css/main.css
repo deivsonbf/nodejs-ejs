@@ -1,0 +1,40 @@
+.clear {
+    clear: both;
+}
+
+.box {
+    width: 75%;
+    padding: 25px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+body {
+    background-color: #eceff1;
+}
+
+.card {
+    margin-top: 15vh;
+}
+
+.logo {
+    width: 30%;
+}
+
+table {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title {
+    padding-top: 20px;
+}
+
+button {
+    float: right;
+    margin-left: 5px;
+}

@@ -1,0 +1,34 @@
+<%- include ('layout/header') %>
+<body>
+  <%- include ('layout/navbar') %>
+
+  <div class="container">
+    <h1 class="title">Lista de Perguntas</h1>
+    <hr />
+    <a href="/perguntar" class="btn btn-primary">Adicionar Pergunta</a>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Título</th>
+          <th scope="col">Descrição</th>
+          <th scope="col">Data de Criação</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% perguntas.forEach(element => { %>
+        <tr>
+          <td><%= element.titulo %></td>
+          <td><%= element.descricao %></td>
+          <td><%= element.createdAt %></td>
+          <td>
+            <a class="btn btn-primary" href="/pergunta/<%=element.id %>">Responder</a>
+          </td>
+          <% }) %>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <%- include ('layout/rodape') %>
+</body>
